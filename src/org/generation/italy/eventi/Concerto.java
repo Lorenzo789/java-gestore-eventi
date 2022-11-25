@@ -2,7 +2,6 @@ package org.generation.italy.eventi;
 
 import java.math.BigDecimal;
 import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
 
 public class Concerto extends Evento {
 
@@ -24,10 +23,6 @@ public class Concerto extends Evento {
 	public void setHour(int hour, int minute) {
 		
 		LocalTime time = LocalTime.of(hour, minute);
-		
-		DateTimeFormatter formattedHour = DateTimeFormatter.ISO_TIME;
-		
-		time.format(formattedHour);
 		
 		this.hour = time;
 	}
