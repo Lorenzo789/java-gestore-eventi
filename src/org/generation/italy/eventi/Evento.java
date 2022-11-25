@@ -88,7 +88,7 @@ public class Evento {
 	
 	@Override
 	public String toString() {
-		return "The title is: " + getTitle()
+		return "\nThe title is: " + getTitle()
 		+ "\nThe date is: " + getDate()
 		+ "\nThe total seat number are: " + getTotalSeatNumber()
 		+ "\nThe number of seat available are: " + seatAvailable()
