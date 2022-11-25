@@ -1,6 +1,8 @@
 package org.generation.italy.eventi;
 
 import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -76,43 +78,40 @@ public class Main {
 //			System.out.println("||-------------------------------------------------------------||");	
 //		}
 		
+		//milestone3
+//		Evento	ev3 = new Evento("ciao", LocalDate.parse("2023-07-10"), 200);
+//		Evento	ev4 = new Evento("ciaone", LocalDate.parse("2023-07-10"), 250);
+//		Evento	ev7 = new Evento("ciaone2", LocalDate.parse("2023-07-18"), 270);
+//		Evento	ev8 = new Evento("ciaone3", LocalDate.parse("2023-07-19"), 220);
+//		Evento	ev5 = new Evento("bella", LocalDate.parse("2023-08-10"), 20);
+//		Evento	ev6 = new Evento("hello", LocalDate.parse("2023-06-15"), 500);
+			
+//		List<Evento> events = new ArrayList<Evento>();
 		
-		Evento	ev3 = new Evento("ciao", LocalDate.parse("2023-07-10"), 200);
-		Evento	ev4 = new Evento("ciaone", LocalDate.parse("2023-07-10"), 250);
-		Evento	ev7 = new Evento("ciaone2", LocalDate.parse("2023-07-18"), 270);
-		Evento	ev8 = new Evento("ciaone3", LocalDate.parse("2023-07-19"), 220);
-		Evento	ev5 = new Evento("bella", LocalDate.parse("2023-08-10"), 20);
-		Evento	ev6 = new Evento("hello", LocalDate.parse("2023-06-15"), 500);
-			
-//			List<Evento> events = new ArrayList<Evento>();
-			
-			ProgrammEventi bigEvents = new ProgrammEventi("baldoria summer");
+//		ProgrammEventi bigEvents = new ProgrammEventi("baldoria summer");
+//
+//		bigEvents.addEvent(ev3);
+//		bigEvents.addEvent(ev4);
+//		bigEvents.addEvent(ev5);
+//		bigEvents.addEvent(ev6);
+//		bigEvents.addEvent(ev7);
+//		bigEvents.addEvent(ev8);
 	
-			bigEvents.addEvent(ev3);
-			bigEvents.addEvent(ev4);
-			bigEvents.addEvent(ev5);
-			bigEvents.addEvent(ev6);
-			bigEvents.addEvent(ev7);
-			bigEvents.addEvent(ev8);
+
+//		System.out.println(bigEvents.getEventInDate(LocalDate.parse("2023-07-10")));
+//		System.out.println(bigEvents.getCountEventInProgramm());
 		
-
-//			System.out.println(bigEvents.getEventInDate(LocalDate.parse("2023-07-10")));
-//			System.out.println(bigEvents.getCountEventInProgramm());
-			
-//			bigEvents.clearEventsInProgramm();
-			
-//			bigEvents.getEventInDate(LocalDate.parse("2022-07-09"));
-			
-			System.out.print(bigEvents.sortProgram());
-
-
-			
-//			Comparator<Evento> comparatorAsc = (event1, event2) -> event1.getDate().compareTo(event2.getDate());
-//			
-//			Collections.sort(bigEvents, comparatorAsc);
-			
-			
-//			System.out.println("\nAscending-order sorting on the basis of LocalDate\n");
-//			events.forEach(event -> System.out.println(event));
+//		bigEvents.clearEventsInProgramm();
+		
+//		bigEvents.getEventInDate(LocalDate.parse("2022-07-09"));
+		
+//		System.out.print(bigEvents.sortProgram());
+		//milestone3
+		
+		//milestone4
+		Concerto vasco = new Concerto("vasco show", "2023-11-10", 300, 12, 30, "80");
+		
+		System.out.println(vasco);
+		//milestone4
 	}
 }

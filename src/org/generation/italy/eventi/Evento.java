@@ -9,7 +9,7 @@ public class Evento {
 	private int totalSeatNumber;
 	private int reservedSeatNumber;
 	
-	public Evento(String title, LocalDate date, int totalSeatNumber) throws Exception {
+	public Evento(String title, String date, int totalSeatNumber) throws Exception {
 		
 		setTitle(title);
 		setDate(date);
@@ -38,13 +38,15 @@ public class Evento {
 		return date;
 	}
 
-	public void setDate(LocalDate date) throws Exception {
+	public void setDate(String date) throws Exception {
 		
-		if(date.isBefore(LocalDate.now())) {
+		LocalDate formattedDate = LocalDate.parse(date);
+		
+		if(formattedDate.isBefore(LocalDate.now())) {
 			
 			throw new Exception("The inserted date is invalid");
 		}
-		this.date = date;
+		this.date = formattedDate;
 	}
 
 	public int getTotalSeatNumber() {
@@ -77,7 +79,7 @@ public class Evento {
 		
 	}
 	
-	private int seatAvailable() {
+	protected int seatAvailable() {
 		
 		if(reservedSeatNumber > 0) {
 			return getTotalSeatNumber() - getReservedSeatNumber();
