@@ -32,7 +32,38 @@ public class Main {
 //			milestoneFour();
 //			
 //		}
+		Evento	ev3 = new Evento("ciao", "2023-07-10", 200);
+		Evento	ev4 = new Evento("ciaone", "2023-07-10", 250);
+		Evento	ev7 = new Evento("ciaone2", "2023-07-18", 270);
+		Evento	ev8 = new Evento("ciaone3", "2023-07-19", 220);
+		Evento	ev5 = new Evento("bella", "2023-08-10", 20);
+		Evento	ev6 = new Evento("hello", "2023-06-15", 500);
 		
+		ProgrammaEventiUnici bigEvents = new ProgrammaEventiUnici("baldoria summer");
+
+		bigEvents.addEvent(ev3);
+		bigEvents.addEvent(ev4);
+		bigEvents.addEvent(ev5);
+		bigEvents.addEvent(ev6);
+		bigEvents.addEvent(ev7);
+		bigEvents.addEvent(ev8);
+		
+	
+//		System.out.println("||-------------------------------------------------------------||");
+//		System.out.println("The result of get event in date 2023-07-10 is:");
+//		System.out.println(bigEvents.getEventInDate(LocalDate.parse("2023-07-10")));
+//		
+//		System.out.println("||-------------------------------------------------------------||");
+//		System.out.println("the count of the event present in big events is:");
+//		System.out.println(bigEvents.getCountEventInProgramm());
+//		
+//		System.out.println("||-------------------------------------------------------------||");
+//		System.out.println("The next event on your programm are:");
+//		System.out.println(bigEvents.sortProgram());
+//		System.out.println("||-------------------------------------------------------------||");
+//		
+//		
+//		bigEvents.clearEventsInProgramm();
 	}
 	
 
