@@ -1,6 +1,8 @@
 package org.generation.italy.eventi;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Evento {
 
@@ -87,6 +89,16 @@ public class Evento {
 		return getTotalSeatNumber();
 	}
 	
+	public boolean equalsEvent(Evento ev) {
+		
+		if(getTitle() == ev.getTitle() && getDate().isEqual(ev.getDate())) {
+			
+			return true;
+		} else {
+			
+			return false;
+		}
+	}
 	
 	@Override
 	public String toString() {
